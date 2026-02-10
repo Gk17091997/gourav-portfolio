@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- SEO -->
-  <meta charset="UTF-8">
-  <title>Gourav Kataria | Senior Full-Stack .NET Developer</title>
-    <!-- SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourav Kataria | .NET Developer</title>
+        <!-- SEO -->
    <meta name="author" content="Gourav Kataria">
   <meta name="description" content="Senior Full-Stack .NET Engineer with 5+ years of experience building scalable, cloud-native enterprise applications.">
   <meta name="keywords" content=".NET Developer, Full Stack Developer, ASP.NET Core, React, Azure, Microservices">
@@ -19,164 +19,548 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J45N28GZ1W"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
+    window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-J45N28GZ1W');
 </script>
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+      <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar">
-
-<!-- NAVBAR -->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top premium-nav">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">GK</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="container text-center">
-    <h1>Senior Full-Stack .NET Engineer</h1>
-
-    <div class="freelance-badge">
-      Available for Freelance & Remote Work
+<body>
+    <div class="gradient-bg"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar-custom">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#hero" class="navbar-brand-custom">GK</a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-links">
+                    <li><a href="#hero" class="active">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a href="#hero" class="navbar-brand-custom">GK</a>
+            <button class="mobile-menu-close" id="mobileMenuClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+            <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+            <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+            <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
     </div>
-
-    <p class="lead mt-4">
-      I design and deliver scalable, secure, cloud-native enterprise systems
-      using .NET, React, Microservices, and Azure.
-    </p>
-
-    <a href="#skills" class="btn btn-primary btn-lg mt-4">
-      View Technology Stack
+    
+    <!-- Floating Download Resume Button -->
+    <a href="resume/Gourav_Kataria_Resume.pdf" download class="btn-download">
+        <i class="fas fa-file-arrow-down"></i>
+        Download Resume
     </a>
-  </div>
-</section>
-
-<!-- TECHNOLOGY STACK -->
-<section id="skills" class="section bg-light">
-  <div class="container">
-    <h2 class="section-title">Technology Stack</h2>
-
-    <!-- FILTER BUTTONS -->
-    <div class="text-center mb-5">
-      <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="backend">Backend</button>
-      <button class="filter-btn" data-filter="frontend">Frontend</button>
-      <button class="filter-btn" data-filter="database">Databases</button>
-      <button class="filter-btn" data-filter="cloud">Cloud</button>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- BACKEND -->
-      <div class="col-md-6 col-lg-3 reveal" data-skill="backend">
-        <div class="tech-card">
-          <h6>Backend</h6>
-          <ul class="tech-list">
-            <li>.NET Core, MVC, Web API</li>
-            <li>C#, Node.js</li>
-            <li>Dapper, Stored Procedures</li>
-          </ul>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-code"></i>
+                            Full Stack Developer
+                        </div>
+                        <h1 class="hero-title">Gourav Kataria</h1>
+                        <p class="hero-description">
+                            Crafting scalable, high-performance enterprise solutions with .NET Core, microservices architecture, and modern cloud technologies. 5+ years of turning complex challenges into elegant code.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn-primary-custom">
+                                <i class="fas fa-rocket"></i>
+                                View Projects
+                            </a>
+                            <a href="#contact" class="btn-secondary-custom">
+                                <i class="fas fa-paper-plane"></i>
+                                Get In Touch
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">7+</div>
+                                <div class="stat-label">Major Projects</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- FRONTEND -->
-      <div class="col-md-6 col-lg-3 reveal" data-skill="frontend">
-        <div class="tech-card">
-          <h6>Frontend</h6>
-          <ul class="tech-list">
-            <li>React.js</li>
-            <li>JavaScript, jQuery</li>
-            <li>Bootstrap, HTML, CSS</li>
-          </ul>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Core Competencies</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>.NET Core & MVC</li>
+                        <li>Web API & C#</li>
+                        <li>Node.js</li>
+                        <li>Microservices</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4>Databases</h4>
+                    <ul>
+                        <li>MS SQL Server</li>
+                        <li>MySQL & PostgreSQL</li>
+                        <li>MongoDB</li>
+                        <li>Dapper & ADO.NET</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>React.js</li>
+                        <li>JavaScript & jQuery</li>
+                        <li>Bootstrap & HTML/CSS</li>
+                        <li>Kendo UI</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h4>Cloud & DevOps</h4>
+                    <ul>
+                        <li>Azure Cloud</li>
+                        <li>Docker</li>
+                        <li>Kafka & RabbitMQ</li>
+                        <li>Redis & Ocelot</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Tools & Practices</h4>
+                    <ul>
+                        <li>Git (GitLab/GitHub)</li>
+                        <li>Agile/Scrum</li>
+                        <li>JIRA & TFS</li>
+                        <li>Azure AD B2C</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- DATABASE -->
-      <div class="col-md-6 col-lg-3 reveal" data-skill="database">
-        <div class="tech-card">
-          <h6>Databases</h6>
-          <ul class="tech-list">
-            <li>SQL Server</li>
-            <li>MySQL, PostgreSQL</li>
-            <li>MongoDB</li>
-          </ul>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Selected work showcasing my expertise</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-type">Enterprise HCM Platform</div>
+                    <h3 class="project-title">Dayforce HCM Platform</h3>
+                    <p class="project-description">
+                        Designed and developed scalable workforce management, payroll, and employee engagement modules for enterprise-grade HCM platform. Built secure APIs and implemented microservices architecture with Kafka for high availability. Optimized database performance while ensuring security best practices across the platform.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i>.NET Core</span>
+                        <span class="tech-tag"><i class="fab fa-react"></i>React.js</span>
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i>Azure</span>
+                        <span class="tech-tag"><i class="fas fa-stream"></i>Kafka</span>
+						 <span class="tech-tag"><i class="fas fa-cubes"></i>Microservices</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i>MongoDB</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i>SQL Server</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-type">Team Management System</div>
+                    <h3 class="project-title">TMS – Team Management System</h3>
+                    <p class="project-description">
+                        Built a comprehensive role-based employee attendance and leave management system with microservices architecture. Implemented secure authentication and authorization, real-time data synchronization, and advanced reporting features. Utilized .NET Core APIs with React frontend for optimal performance.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i>.NET Core API</span>
+                        <span class="tech-tag"><i class="fas fa-cubes"></i>Microservices</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i>MySQL</span>
+                        <span class="tech-tag"><i class="fab fa-react"></i>React</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-type">Healthcare Management</div>
+                    <h3 class="project-title">EMRArchive</h3>
+                    <p class="project-description">
+                        Developed a comprehensive cloud-based patient data and hospital management system with scalable architecture. Built using ASP.NET Core MVC and SQL Server with Kendo UI integration for interactive components. Enhanced performance through Dapper and optimized stored procedures, delivering secure and user-friendly workflows.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i>ASP.NET Core MVC</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i>SQL Server</span>
+                        <span class="tech-tag"><i class="fas fa-bolt"></i>Dapper</span>
+                        <span class="tech-tag"><i class="fas fa-th"></i>Kendo UI</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-type">Healthcare System</div>
+                    <h3 class="project-title">Hospital Management System</h3>
+                    <p class="project-description">
+                        Built a comprehensive hospital management solution featuring Admin, Facility, and Patient portals. Designed complete database architecture including stored procedures, functions, and optimized table structures. Created dynamic UI components with seamless AJAX integration for real-time data operations.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i>ASP.NET MVC</span>
+                        <span class="tech-tag"><i class="fas fa-file-code"></i>Web Forms</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i>SQL Server</span>
+                        <span class="tech-tag"><i class="fas fa-plug"></i>ADO.NET</span>
+                        <span class="tech-tag"><i class="fab fa-bootstrap"></i>Bootstrap</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-type">Travel Industry Platform</div>
+                    <h3 class="project-title">Odenza Panel</h3>
+                    <p class="project-description">
+                        Developed and maintained a robust travel industry management system handling tickets, guest management, invoicing, and order processing. Implemented sophisticated role-based admin functionalities with location-specific access controls for enhanced security and user experience.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i>ASP.NET MVC</span>
+                        <span class="tech-tag"><i class="fas fa-plug"></i>ADO.NET</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i>jQuery</span>
+                        <span class="tech-tag"><i class="fas fa-sync"></i>AJAX</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i>SQL Server</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-type">Asset Management</div>
+                    <h3 class="project-title">Asset Manager</h3>
+                    <p class="project-description">
+                        Created a store-based asset management system for comprehensive inventory and product tracking. Designed and implemented RESTful APIs for seamless backend integration with Azure AD B2C authentication for secure access control.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i>ASP.NET Core</span>
+                        <span class="tech-tag"><i class="fas fa-shield-alt"></i>Azure AD B2C</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i>SQL Server</span>
+                        <span class="tech-tag"><i class="fab fa-github"></i>GitHub</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-type">E-Learning Platform</div>
+                    <h3 class="project-title">CI BOOST</h3>
+                    <p class="project-description">
+                        Contributed to a tutorial-based learning platform with admin-controlled boost series. Designed robust APIs and integrated multimedia content including audio, video, and chapter-based tutorials for enhanced learning experience.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag"><i class="fab fa-microsoft"></i>ASP.NET Core</span>
+                        <span class="tech-tag"><i class="fas fa-database"></i>SQL Server</span>
+                        <span class="tech-tag"><i class="fab fa-gitlab"></i>GitLab</span>
+                        <span class="tech-tag"><i class="fab fa-jira"></i>JIRA</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- CLOUD -->
-      <div class="col-md-6 col-lg-3 reveal" data-skill="cloud">
-        <div class="tech-card">
-          <h6>Cloud & Messaging</h6>
-          <ul class="tech-list">
-            <li>Azure, Docker</li>
-            <li>Kafka, RabbitMQ</li>
-            <li>Redis, Ocelot</li>
-          </ul>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">Career progression and key accomplishments</p>
+            </div>
+            
+            <div class="timeline-grid">
+                <div class="timeline-item">
+                    <div class="timeline-period">July 2025 - Present</div>
+                    <h3 class="timeline-title">Senior Software Developer</h3>
+                    <div class="timeline-company">Dayforce (Ceridian)</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Designing scalable workforce management and payroll modules for enterprise HCM platform</li>
+                            <li>Building secure APIs with .NET Core, React.js, and implementing microservices with Kafka</li>
+                            <li>Optimizing database performance across SQL Server and MongoDB</li>
+                            <li>Collaborating in Agile teams to deliver enterprise-grade solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-period">April 2024 - June 2025</div>
+                    <h3 class="timeline-title">Software Engineer</h3>
+                    <div class="timeline-company">Ellkay</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Developed cloud-based patient data and hospital management system</li>
+                            <li>Built scalable architecture using ASP.NET Core MVC and SQL Server</li>
+                            <li>Enhanced performance using Dapper with optimized stored procedures</li>
+                            <li>Integrated Kendo UI for rich interactive components</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-period">November 2022 - March 2024</div>
+                    <h3 class="timeline-title">.NET Developer</h3>
+                    <div class="timeline-company">TecMantras</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Developed travel industry management and e-learning platforms</li>
+                            <li>Implemented role-based access control and location-specific features</li>
+                            <li>Built REST APIs and integrated Azure AD B2C for secure authentication</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-period">November 2021 - October 2022</div>
+                    <h3 class="timeline-title">Junior .NET Developer</h3>
+                    <div class="timeline-company">Quest Infosoft Pvt Ltd</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Modernized legacy applications by migrating to ASP.NET MVC/Core Web API</li>
+                            <li>Improved performance and user experience with code optimization</li>
+                            <li>Collaborated with senior developers on client-specific solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-period">May 2020 - November 2021</div>
+                    <h3 class="timeline-title">Junior .NET Developer</h3>
+                    <div class="timeline-company">ConvergeSoft International Pvt Ltd</div>
+                    <div class="timeline-description">
+                        <ul>
+                            <li>Developed comprehensive hospital management system with multiple portals</li>
+                            <li>Designed database architecture with stored procedures and functions</li>
+                            <li>Created dynamic UI components with Bootstrap and JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- STICKY RESUME CTA -->
-<a href="resume/Gourav_Kataria_Resume.pdf" class="resume-cta" download>
-  📄 Download Resume
-</a>
-
-<!-- FOOTER -->
-<footer class="footer">
-  © 2026 Gourav Kataria
-</footer>
-
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- SCROLL ANIMATION -->
-<script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-      }
-    });
-  }, { threshold: 0.15 });
-
-  document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-</script>
-
-<!-- FILTER SCRIPT -->
-<script>
-  const buttons = document.querySelectorAll(".filter-btn");
-  const cards = document.querySelectorAll("[data-skill]");
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      buttons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      const filter = btn.dataset.filter;
-
-      cards.forEach(card => {
-        if (filter === "all" || card.dataset.skill === filter) {
-          card.style.display = "block";
-          setTimeout(() => card.classList.add("active"), 50);
-        } else {
-          card.style.display = "none";
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to collaborate on your next project</p>
+            </div>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <a href="tel:+918559857415">+91 8559857415</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:gouravkataria924@gmail.com">gouravkataria924@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/gourav-kataria-3aa5a7201/" target="_blank">Connect on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer style="background: var(--card-bg); padding: 2.5rem 0; margin-top: 5rem; text-align: center; border-top: 1px solid var(--border);">
+        <div class="container">
+            <p style="color: var(--text-secondary); margin: 0; font-size: 0.95rem;">
+                © 2026 Gourav Kataria. Built with passion and precision.
+            </p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
-      });
-    });
-  });
-</script>
-
+        
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        mobileMenuToggle.addEventListener('click', openMobileMenu);
+        mobileMenuClose.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+        
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+        
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar-custom');
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-links a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all cards
+        document.querySelectorAll('.project-card, .timeline-item, .skill-category, .contact-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
