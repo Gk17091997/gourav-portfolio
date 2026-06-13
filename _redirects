@@ -1,0 +1,11 @@
+# Netlify Redirects Configuration
+# These redirects help with SEO by maintaining URL consistency
+
+# Redirect www to non-www (if needed in future)
+# http://www.gourav-kataria.netlify.app/* https://gourav-kataria.netlify.app/:splat 301
+
+# Redirect old URLs if you ever change structure
+# /old-page /index.html#projects 301
+
+# Default fallback for SPA routing
+/* /index.html 200
